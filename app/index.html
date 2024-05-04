@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab42c2efde.js" crossorigin="anonymous"></script>
+    
+   
+</head>
+<body>
+<main id="main-container">
+  <h1 id="title">Todo<span>App</span></h1>
+  <h2 id="sub-title">MIS TAREAS</h2>
+<form id="formulario">
+  <div id="form-container">
+    <input type="text" placeholder="Escribe una tarea" id="new-task">
+    <button id="add-task" type="submit" disabled><i class="fa-solid fa-circle-plus"></i></button>
+  </div>
+    <h5 id="ingrese">Ingrese una nueva tarea</h5>  
+    <div id="form-list-container">
+      <ul id="milista"> 
+        
+                <li class="tareas"><button class="delete" type="reset"><i class="fa-solid fa-trash-can"></i></button> <p class="text-task">Tus tareas se verán aqui</p>  <button class="check"><i class="fa-regular fa-circle"></i></button>      
+      </ul>
+    </div>
+    <div id="counters">
+      <div id="total-tasks">
+        <p class="all-counters">Total: <Span id="total-count">0</Span></p>
+      </div>
+      <div t id="completed-tasks">
+        <p class="all-counters">completed: <span id="completed-count">0</span></p>
+      </div>
+      <div id="incompleted-tasks">
+        <p class="all-counters">incompleted: <span id="incompleted-count">0</span></p>
+      </div>
+      
+    </div>
+  </form>
+</main>
+<script src="dom.js"></script>
+</body>
+</html>

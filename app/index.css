@@ -1,0 +1,348 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+    height: 100vh;
+    padding: auto;
+    }
+
+body {
+    margin: 0;
+}    
+
+#main-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0 1rem;
+    max-width: 160rem;
+    
+}
+
+#formulario {
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: #374151;
+    border-radius: 0.5rem;
+}
+
+#title{
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: initial;
+    margin: 1rem 0;
+    
+}  
+
+#title > span {
+    color: #374151;
+}
+
+#sub-title{
+    display: flex;
+    font-size: 16px;
+    color: #374151;
+}
+
+#form-container{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#ingrese{
+    display: flex;
+    justify-content: center;
+    color: red;
+    
+}
+
+#new-task{
+    background-color: darkgray;
+    border-radius: 0.5rem;
+    border: none;
+    width: 100%;
+    height: 3rem;
+}
+
+
+
+
+#add-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: darkgray;
+    width: 3rem;
+    height: 3rem;
+    font-size: 40px;  
+    cursor: pointer;
+    transition: all 0.175s ease-in-out;
+    
+    
+}
+
+#add-task:disabled{
+    color: rgba(211, 211, 211, 0.164);
+    transition: none;
+}
+
+#add-task:active{
+    
+    color: whitesmoke;
+    
+}
+
+#milista{
+    background-color: #242a35;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+    overflow:auto;
+    scroll-behavior: smooth;
+    height: 18rem;
+}
+
+
+
+
+#milista::-webkit-scrollbar {
+    width: 15px;
+}
+
+
+
+#milista::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    transition: all 0.175s ease-in-out;
+    
+    
+}
+
+#milista::-webkit-slider-thumb:hover{
+    background-color: #374151;
+}
+
+#milista::-webkit-scrollbar-track {
+    border-radius: 20px;  
+}
+
+
+
+
+#form-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    width: 100%; 
+    text-align: left;
+    font-size: 12px;
+    
+}    
+
+#counters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.delete{
+    background-color: transparent;
+    width: 4rem;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.175s ease-in-out;
+}
+
+.delete:active{
+    background-color: red;
+    color: #797979 ;
+    font-size: 30px;
+    
+}
+
+
+
+.tareas{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid white;    
+    font-size: 16px;
+}
+
+.check{
+    background-color: transparent;
+    width: 4rem;
+    border-style: none;
+    color: green;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.175s ease-in-out;
+
+}
+
+.check:active{
+    background-color: green;
+    color: #797979;
+    font-size: 30px;
+}
+
+
+
+
+.check-done{
+    
+    background-color: transparent;
+    width: 4rem;
+    border-style: none;
+    color: green;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.175s ease-in-out;
+
+}
+
+.check-done:active{
+    background-color: green;
+    color: #797979;
+    font-size: 30px;
+}
+
+.text-task{
+    height: auto;
+    width: 100%;
+    font-size: 16px;
+    
+}    
+
+.text-done{
+    text-decoration: line-through;
+    height: auto;
+    width: 100%;
+    font-size: 16px;
+    
+}
+
+.done-task{
+    text-decoration: line-through;
+    
+}
+
+#total-tasks {
+    padding: 0.5rem 1rem;
+    background-color: purple;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+#completed-tasks {
+    padding: 0.5rem 1rem;
+    background-color: green;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+#incompleted-tasks {
+    padding: 0.5rem 1rem;
+    background-color: red;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+@media (min-width: 768px){
+#title {
+   
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    
+    }
+#formulario{
+    width: 60%;
+    
+}
+
+.all-counters{
+    font-size: 16px;
+}
+}
+@media (min-width: 1024px){
+    #title {
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        
+        }
+    #formulario{
+        width: 60%;
+        
+    }
+
+    #milista{
+        height: 15rem;
+    }
+
+    .all-counters{
+        font-size: 16px;
+    }
+    
+    
+}
+
+@media (min-width: 2560px){
+    #title {
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    
+    }
+
+#main-container{
+    display: flex;
+    align-items: center;
+    padding-top: 10rem;
+}    
+#formulario{
+    width: 60%;
+    
+}
+
+#milista{
+    height: 20rem;
+} 
+}
+    
